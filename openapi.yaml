@@ -1,32 +1,38 @@
 openapi: 3.0.4
 info:
   title: Country Borders
-  description: Country Borders is a simple tool for getting the list of neighboring countries for a specific country. It returns the list of neighboring countries for the specified country.
+  description: >-
+    Country Borders is a simple tool for getting the list of neighboring
+    countries for a specific country. It returns the list of neighboring
+    countries for the specified country.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/countryborders:
     get:
       summary: Get Neighboring Countries
-      description: Country Borders is a simple tool for getting the list of neighboring countries for a specific country. It returns the list of neighboring countries for the specified country.
+      description: >-
+        Country Borders is a simple tool for getting the list of neighboring
+        countries for a specific country. It returns the list of neighboring
+        countries for the specified country.
       operationId: countryborders
       parameters:
-      - name: country
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The Country 2 Letter ISO code (e.g., CA)
-        example: CA
+        - name: country
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The Country 2 Letter ISO code (e.g., CA)
+          example: CA
       responses:
         '200':
           description: Successful Response
@@ -42,11 +48,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   country: Canada
                   cca2: CA
@@ -57,13 +63,13 @@ paths:
                     lat: 60
                     lng: -95
                   borders:
-                  - USA
+                    - USA
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -71,4 +77,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
