@@ -12,7 +12,6 @@ namespace APIVerve.API.CountryBorders
     {
         /// <summary>
         /// The Country 2 Letter ISO code (e.g., CA)
-        /// Example: CA
         /// </summary>
         [JsonProperty("country")]
         public string Country { get; set; }
