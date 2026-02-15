@@ -1,1 +1,3 @@
-from .apiClient import CountrybordersAPIClient
+from .apiClient import CountrybordersAPIClient, CountrybordersAPIClientError
+
+__all__ = ['CountrybordersAPIClient', 'CountrybordersAPIClientError']
