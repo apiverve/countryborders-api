@@ -227,8 +227,9 @@ from apiverve_countryborders.apiClient import CountrybordersAPIClient
 
 api = CountrybordersAPIClient("[YOUR_API_KEY]")
 
+query = { "country": "CA" }
+
 try:
-    query = { "country": "CA" }
     result = api.execute(query)
     print(result)
 finally:
