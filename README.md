@@ -191,11 +191,39 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Country Borders API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "country": "Canada",
+    "cca2": "CA",
+    "landlocked": false,
+    "region": "Americas",
+    "subregion": "Northern America",
+    "coordinates": {
+      "lat": 60,
+      "lng": -95
+    },
+    "borders": [
+      "USA"
+    ]
+  }
 }
 ```
 
