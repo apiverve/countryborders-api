@@ -25,6 +25,9 @@ namespace APIVerve.API.CountryBorders
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -36,7 +39,7 @@ namespace APIVerve.API.CountryBorders
         public string Cca2 { get; set; }
 
         [JsonProperty("landlocked")]
-        public bool Landlocked { get; set; }
+        public bool? Landlocked { get; set; }
 
         [JsonProperty("region")]
         public string Region { get; set; }
@@ -54,9 +57,21 @@ namespace APIVerve.API.CountryBorders
     public partial class Coordinates
     {
         [JsonProperty("lat")]
-        public long Lat { get; set; }
+        public long? Lat { get; set; }
 
         [JsonProperty("lng")]
-        public long Lng { get; set; }
+        public long? Lng { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
