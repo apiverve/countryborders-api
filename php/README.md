@@ -1,6 +1,6 @@
 # Country Borders API - PHP Package
 
-Country Borders is a simple tool for getting the list of neighboring countries for a specific country. It returns the list of neighboring countries for the specified country.
+Country Borders identifies adjacent nations by two-letter ISO country code. It returns the list of bordering countries along with region, subregion, and landlocked status.
 
 ## Installation
 
@@ -92,11 +92,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/countryborders?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/countryborders?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://countryborders.apiverve.com?utm_source=php&utm_medium=readme](https://countryborders.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/countryborders?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/countryborders?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
