@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Country Borders API client.
 ///
-/// For more information, visit: https://countryborders.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/countryborders?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [country] (required) - The Country 2 Letter ISO code (e.g., CA) [minLength: 2, maxLength: 2]

@@ -1,7 +1,7 @@
 name: apiverve_countryborders
-description: Country Borders is a simple tool for getting the list of neighboring countries for a specific country. It returns the list of neighboring countries for the specified country.
-version: 1.1.14
-homepage: https://countryborders.apiverve.com?utm_source=dart&utm_medium=homepage
+description: "Country Borders identifies adjacent nations by two-letter ISO country code. It returns the list of bordering countries along with region, subregion, and landlocked status."
+version: 1.2.3
+homepage: https://apiverve.com/marketplace/countryborders?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/countryborders-api/tree/main/dart
 
 environment:
