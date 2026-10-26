@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/countryborders",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Country Borders identifies adjacent nations by two-letter ISO country code. It returns the list of bordering countries along with region, subregion, and landlocked status.",
   "main": "index.js",
   "types": "index.d.ts",
